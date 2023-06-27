@@ -1,0 +1,112 @@
+////checkout
+.woocommerce-checkout {
+    margin-bottom: 30px;
+    .break-crumb {
+        display: none;
+    }
+    .woocommerce-billing-fields {
+        &__field-wrapper {
+            .input-text {
+                border: 1px solid #c4c4c4;
+                padding: 4px;
+                height: 31px;
+            }
+        }
+    }
+    .woocommerce-additional-fields {
+        .woocommerce-input-wrapper {
+            h3 {
+                margin-top: 15px;
+            }
+            .input-text {
+                border: 1px solid #c4c4c4;
+                border-radius: 5px;
+            }
+        }
+    }
+    .woocommerce-checkout-review-order {
+        .woocommerce-checkout-review-order-table {
+            td {
+                @media (max-width: 321px) {
+                    padding: 5px 0px;
+                }
+            }
+            .cart_item {
+                .product-thumbnail {
+                    width: 150px;
+                    height: 150px;
+                }
+                .product-name {
+                    @media (max-width: 321px) {
+                        font-size: 13px;
+                    }
+                }
+                .product-total {
+                    @media (max-width: 321px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .cart-subtotal {
+                th {
+                    @media (max-width: 376px) {
+                        padding: 5px 2px;
+                    }
+                }
+            }
+        }
+        .form-row-first {
+            input[type="text"] {
+                border: 1px solid #c4c4c4;
+                // border-radius: 5px;
+                height: 31px;
+                padding: 7px;
+            }
+        }
+        .form-row-last {
+            button[type="submit"] {
+                background-color: #18AC4E;
+                color: white;
+            }
+        }
+    }
+    .woocommerce-checkout-payment {
+        .place-order {
+            button[type="submit"] {
+                background-color: #18AC4E;
+                color: white;
+            }
+        }
+    }
+    .woocommerce-notices-wrapper {
+        .woocommerce-message {
+            margin: 0 0 0.5rem;
+            .wc-forward {
+                background-color: #18AC4E;
+                color: white;
+            }
+        }
+    }
+}
+
+/// page thank
+.woocommerce-order {
+    .woocommerce-order-overview {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0 !important;
+        }
+        li {
+            @media (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.woocommerce-account {
+    .break-crumb {
+        display: none;
+    }
+}

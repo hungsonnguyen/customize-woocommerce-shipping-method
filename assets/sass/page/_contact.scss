@@ -1,0 +1,201 @@
+.banner-contact {
+    @media (max-width: 480px) {
+        margin-top: 10px;
+    }
+    margin-top: var(--header-height);
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content-contact {
+    padding-top: 30px;
+    min-height: calc(70vh - 112px);
+    .text {
+        h2 {
+            font-size: 20px;
+            @media (max-width: 414px) {
+                font-size: 16px;
+            }
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            @media (max-width: 414px) {
+                font-size: 15px;
+            }
+        }
+    }
+    .phone {
+        p {
+            @media (min-width: 361px) and (max-width: 375px) {
+                font-size: 13px;
+            }
+            @media (max-width: 360px) {
+                font-size: 13px;
+            }
+            img {
+                font-size: 30px;
+                color: #25b92b;
+                margin: 0 17px 0 20px;
+            }
+            a {
+                &:hover {
+                    color: #25b92b !important;
+                }
+            }
+        }
+    }
+    .address {
+        margin: 30px 0;
+        .item {
+            margin-bottom: 25px;
+            // img {
+            //     @media (max-width: 360px) {
+            //         width: 37px;
+            //     }
+            // }
+            img {
+                width: 37px;
+            }
+            .text {
+                color: #454545;
+                font-weight: bold;
+                margin-left: 15px;
+                @media (max-width: 414px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .form {
+        background-color: #f2f4f7;
+        form {
+            background-color: #f2f4f7;
+            padding: 40px 40px 3px 40px;
+            @media (max-width: 360px) {
+                padding: 18px 25px 36px;
+            }
+            p {
+                .wpcf7-submit {
+                    width: 100%;
+                    background-color: #25b92b;
+                    border: none;
+                    height: 38px;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: #0c660f;
+                    }
+                }
+            }
+            label {
+                width: 100%;
+                span {
+                    input {
+                        width: 100%;
+                        box-shadow: -4px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                        border: none;
+                        border-radius: 5px;
+                        height: 38px;
+                        outline: none;
+                        padding: 0 20px;
+                    }
+                    textarea {
+                        width: 100%;
+                        box-shadow: -4px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                        border: none;
+                        border-radius: 5px;
+                        outline: none;
+                        padding: 0 20px;
+                    }
+                }
+            }
+            textarea {
+                box-shadow: -4px 0px 12px 0px rgba(0, 0, 0, 0.25);
+                height: 154px;
+            }
+            button {
+                max-width: 100%;
+                background-color: #25b92b;
+                color: #fff;
+                &:hover {
+                    background-color: #0c660f;
+                }
+            }
+            .wpcf7-submit {
+                color: #fff;
+            }
+        }
+    }
+    .bot {
+        padding: 50px 0;
+        .icon {
+            .fa {
+                margin-right: 15px;
+                padding: 16px 20px;
+                border: 1px solid #005fb7;
+                i {
+                    font-size: 20px;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.25, 1.25);
+                    }
+                }
+            }
+            .ist {
+                margin-right: 15px;
+                padding: 18px 17px 16px 17px;
+                border: 1px solid #ff5b83;
+                i {
+                    font-size: 20px;
+                    color: #ff5b83;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.25, 1.25);
+                    }
+                }
+            }
+            .tw {
+                margin-right: 15px;
+                padding: 18px 16px 16px 16px;
+                border: 1px solid #00c2ff;
+                i {
+                    font-size: 20px;
+                    color: #00c2ff;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.25, 1.25);
+                    }
+                }
+            }
+            .gg {
+                margin-right: 15px;
+                padding: 18px 16px 16px 16px;
+                border: 1px solid #ff0b0b;
+                i {
+                    font-size: 20px;
+                    color: #ff0b0b;
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.25, 1.25);
+                    }
+                }
+            }
+        }
+        .map {
+            margin-top: 50px;
+            iframe {
+                width: 100% !important;
+            }
+        }
+    }
+}

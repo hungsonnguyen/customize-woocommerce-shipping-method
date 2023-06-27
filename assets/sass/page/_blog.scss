@@ -1,0 +1,130 @@
+.page-blogs,
+.page-abouts {
+    @media (max-width: 1200px) {
+        margin-top: 10px;
+    }
+    min-height: calc(100vh - 711px);
+    .page-blog {
+        .title {
+            text-align: center;
+            padding: 40px 0;
+            @media (max-width: 414px) {
+                padding: 20px 0;
+            }
+            h2 {
+                color: #1fb520;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .blog-list {
+            .blog-item {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                margin-bottom: 35px;
+                border-radius: 7px;
+                border: 1px solid #454545;
+                transition: all 0.3s;
+                a {
+                    display: flex;
+                    @media (max-width: 768px) {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
+                &:hover {
+                    border-color: #18ac4e;
+                }
+                &__img {
+                    width: 260px;
+                    height: 229px;
+                    object-fit: cover;
+                    border-radius: 7px;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
+                    @media (max-width: 414px) {
+                        aspect-ratio: 392/232;
+                    }
+                }
+                &__info {
+                    padding: 25px 30px;
+                    h3 {
+                        color: #454545;
+                        padding-bottom: 5px;
+                        font-size: 24px;
+                        @media (max-width: 768px) {
+                            white-space: pre-wrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            display: -webkit-box;
+                        }
+                        @media (max-width: 414px) {
+                            font-size: 1.12em;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: 1em;
+                        }
+                    }
+                    p {
+                        color: black;
+                        white-space: pre-wrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        display: -webkit-box;
+                        font-size: 18px;
+                        @media (max-width: 414px) {
+                            line-height: 1.5;
+                            font-size: 16px;
+                            -webkit-line-clamp: 2;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: 14px;
+                        }
+                    }
+                    button {
+                        color: white;
+                        border-radius: 50px;
+                        outline: none;
+                        background-color: #454545;
+                        padding: 10px 30px;
+                        border: none;
+                        @media (max-width: 414px) {
+                            padding: 5px 20px;
+                        }
+                    }
+                    &:hover {
+                        button {
+                            background-color: #18ac4e;
+                        }
+                    }
+                    span {
+                        border-bottom: 2px solid #18ac4e;
+                        height: 2px;
+                        color: #18ac4e;
+                        width: 50px;
+                    }
+                }
+            }
+            .pagenavi {
+                display: flex;
+                justify-content: center;
+                .page-numbers {
+                    padding: 5px 10px;
+                    border: none;
+                    margin-right: 5px;
+                    color: white;
+                    background-color: #656565;
+                }
+                .current {
+                    background-color: #18ac4e;
+                    color: white;
+                }
+            }
+        }
+    }
+}

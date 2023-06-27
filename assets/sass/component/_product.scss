@@ -1,0 +1,84 @@
+.product-item {
+    border: 1px solid #cecece;
+    padding: 4px 8px 16px 8px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    // transition: all 0.3s ease-in-out;
+    background-color: white;
+    &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .img {
+        width: 100%;
+        height: 185px;
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img {
+                width: auto;
+                height: 100%;
+                display: block;
+                margin: 0 auto;
+                object-fit: contain;
+            }
+        }
+        @media (max-width: 414px) {
+            height: 130px;
+        }
+    }
+    .gif-sale {
+        width: 50px !important;
+        top: 0;
+        left: 0%;
+    }
+    .gif-new {
+        width: 50px;
+        position: absolute;
+        top: -4%;
+        right: 0%;
+    }
+    &__name {
+        color: #454545;
+        text-align: center !important;
+        display: -webkit-box;
+        max-height: 3.2rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 1;
+        // line-height: 1rem;
+        &:hover {
+            color: #454545;
+        }
+    }
+    &__price {
+        .price {
+            color: #ff0000 !important;
+            font-size: 16px !important;
+            ins {
+                text-decoration: none;
+                font-weight: normal !important;
+            }
+        }
+        @media (max-width: 414px) {
+            margin: 10px !important;
+        }
+    }
+    &__detail {
+        font-size: 16px;
+        color: #fff;
+        background-color: #1fb520;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 24px;
+        &:hover {
+            background-color: #0a700a;
+            color: #fff;
+        }
+    }
+}
